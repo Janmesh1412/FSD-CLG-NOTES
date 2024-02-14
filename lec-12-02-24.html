@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Meta characters
+        ^ -- string must starts with
+        * -- zero or more occurence
+        + -- one or more occurence
+        $ -- matches with end of inputs
+        \d -- find a digit [0-9]
+        \D -- find non digits
+        \w -- find a word character  0-9 A-Z a-z
+        \W -- find a non-word character  all special character
+        (^ \_)- does not starts with 
+     -->
+    <input type="text" id="demo">
+    <button onclick="fun()">submit</button>
+    <!-- write a htmtl form expectiong integer having 4 digits input should not accept alphabets and special character symbol  -->
+    <script>
+        function fun(){
+            var pat=/^\d+$/;
+            // for email id
+            // pattern=/^\w + ([\,-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            var u = document.getElementById("demo").value;
+            if(u.length!=4){alert("username must be 4 digits")}
+            if(pat.test(u)){alert("pattern matched")}
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM (Document object model) 
+        with html DOM and  JS we can change all elements of html document 
+        getElementById("id")
+        getElementByClassName("class")
+        getElementByTagName("P")
+    -->
+    <!-- element.style.propertyname=value;
+        elemet.attribute=value
+        element.setAttribute("attribute","value") -->
+    <!-- <p id="demo"></p>
+    <p style="color:brown" class="c1">heyy</p>
+    <p style="color:rgb(28, 223, 93)" class="c1">hryy</p>
+    <p style="color:rgb(217, 231, 13)" class="c1">th</p>
+    <p id="p1">this is a p tag</p>
+    <h1 id="h1">this is h1 tag</h1>
+
+    <p id="e">Hello World</p>
+    <button type="button" onclick="f1()">click me</button> -->
+    
+    <button onclick="document.getElementById('demo1').src='x.jpeg'">click me</button>
+    <img id="demo1"src="y.jpeg" alt="">
+    <button onclick="document.getElementById('demo1').src='y.jpeg'"> me</button>
+    <br>    
+       <label for="">username</label>
+        <input type="text" id="d1">
+        <br>
+        <label for="">password</label>
+        <input type="text" id="d2">
+        <input type="submit" onclick="f2()">
+        <!-- form element fetching
+            <form name="f1">
+                obj1=document.f1(form_name).username.value; -->
+    <script>
+        // document.getElementById("demo").innerHTML="Hello World"
+        // c1=document.getElementsByClassName("c1")
+        // for(i=0;i<c1.length;i++){c1[i].innerHTML="Text changed"}
+        // document.getElementById("p1").style.color="red";
+        // document.getElementById("h1").setAttribute("align","right");
+        // function f1()
+        // {
+        //     document.getElementById("e").innerHTML="this is an example";
+        //     document.getElementById("e").style.color="red";
+        //     document.getElementById("e")
+        // }
+        function f2()
+        {
+            x=document.getElementById("d1").value;
+            y=document.getElementById("d2").value;
+            document.write("USERNAME  "+  x+"  password   "+y)
+        }
+    </script> 
+</body>
+</html>

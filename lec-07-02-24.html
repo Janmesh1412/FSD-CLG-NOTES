@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Date Object
+        date=new Date()
+        getFullYear()
+        getMonth()  0-11
+        getDate()   1-31
+        getHours()  0-23
+        getMinutes()    0-59
+        getDay()    0-6
+        YYYY-MM-DD
+        getTime()-- msec from 1st jan to given date
+     -->
+     <!-- Array
+        const myArray=[]
+        const myArray=new Array();
+        const myArray=["Banana","Apple"] -->
+     <script>
+        // d1= new Date()
+        // d2= new Date("2000-3-15" +"<br>")
+        // d3= new Date("2024,02,15,20,50,50,0") // y,m,d,h,m,s
+        // document.write(d1)
+        // wap javascript fun  to claculate how mant days are left in your birthday
+        function cal(d1,d2)
+        {   oneday=24*60*60*1000;
+            d1_ms=d1.getTime();
+            d2_ms=d2.getTime();
+            diff_ms=Math.abs(d1_ms-d2_ms);
+            return(Math.round(diff_ms/oneday));
+            
+        }
+        d4=new Date();
+        d5=new Date("2024-12-14")
+        document.write(cal(d4,d5)+"<br>")
+        var x=10;
+        function print(){
+            let x=25;
+            document.write(x+"<br>")
+        }
+        // let x=15; does not work
+        // var x=15; it works
+        // const can not change the value
+        print()
+        document.write(x+"<br>")
+        // var emp= new Array(["snfkl","qaqu"])                
+        const fruit=["apple","graps","mango"];
+        for (i=0;i<fruit.length;i++){document.writeln(fruit[i]+"   ");}
+     </script>
+</body>
+</html>
